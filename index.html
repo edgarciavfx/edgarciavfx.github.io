@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Edgar Garcia Padilla — VFX Artist & Software Developer. Compositing, pipeline tools, and full-stack engineering at the intersection of artistry and automation.">
+    <meta name="theme-color" content="#0B0B0C">
+    <title>Edgar Garcia Padilla | VFX Artist &amp; Software Developer</title>
+    <link rel="canonical" href="https://edgarciavfx.github.io">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar__container">
+            <button class="navbar__menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="navbar__links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#vfx-credits" class="nav-link">VFX Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="container hero__container">
+            <div class="status-badge"><span class="status-dot"></span>Available for VFX &amp; Development Roles</div>
+            <h1 class="hero__title">VFX artist who learned to code<br>so the art wouldn't <span class="accent-text">wait</span>.</h1>
+            <p class="hero__headline">VFX Artist &amp; Software Developer</p>
+            <p class="hero__subtitle">
+                Compositing, pipeline tools, and full-stack engineering &mdash; built at the intersection of artistry and automation. Based in Guadalajara, shipping work for Hollywood, Netflix, and beyond.
+            </p>
+            <div class="hero__cta">
+                <a href="#projects" class="button button--primary">View Projects</a>
+                <a href="./Edgar_Garcia_Padilla_Resume.pdf" class="button button--secondary">Resume</a>
+                <a href="https://github.com/edgarciavfx" class="button button--tertiary">GitHub</a>
+            </div>
+            <div class="hero__wipe" aria-hidden="true"></div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Artist &amp; Engineer</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p class="about__intro">
+                        I'm a VFX compositor and software developer &mdash; a hybrid who bridges artistry with engineering.
+                    </p>
+                    <p>
+                        It started with a <em>Stalingrad</em> breakdown. Watching set extensions, keying, and explosions composited together in Nuke clicked something in me. That curiosity took me from Guadalajara to Vancouver Film School, then into production &mdash; shipping VFX for MPC, Ingenuity Studios, La Covacha, and beyond.
+                    </p>
+                    <p>
+                        Over 6+ years in production, I've been the artist staring at a slow workflow. So I learned to build the fix. Now I create desktop utilities, pipeline tools, and web applications that reduce friction for the artists on the other side.
+                    </p>
+                    <div class="about__journey">
+                        <div class="journey-point">
+                            <h3>Artist First</h3>
+                            <p>
+                                I've been in the chair. I know what slows a compositor down, what breaks in a render, what a bad pipeline feels like. Every tool I build starts from that perspective.
+                            </p>
+                        </div>
+                        <div class="journey-point">
+                            <h3>Bridging Worlds</h3>
+                            <p>
+                                VFX compositing and software engineering aren't separate disciplines for me. I speak Nuke and Next.js, PySide and PostgreSQL &mdash; and I build the bridge between them.
+                            </p>
+                        </div>
+                        <div class="journey-point">
+                            <h3>Ship Mentality</h3>
+                            <p>
+                                From MPC to Ingenuity Studios, I've delivered under real deadlines. I know what breaks in production, and I build things that don't.
+                            </p>
+                        </div>
+                    </div>
+                    <p class="about__education">
+                        Vancouver Film School &middot; Universidad Marista &middot; Guadalajara, Mexico
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Pipeline Graph</h2>
+            <p class="skills__description">
+                Node graph &mdash; explore my technical pipeline across VFX compositing, generative workflows, and engineering.
+            </p>
+            <div class="skill-tree-container">
+                <div class="skill-tree__search-wrapper">
+                    <svg class="skill-tree__search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8"/>
+                        <path d="m21 21-4.35-4.35"/>
+                    </svg>
+                    <input type="text" class="skill-tree__search" id="skillSearch" placeholder="Search skills..." aria-label="Search skills">
+                </div>
+                <div class="skill-tree" id="skillTree" aria-label="Technical skills node graph"></div>
+                <div class="skill-tree__summary" id="skillTreeSummary"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects__grid">
+                <article class="node-card">
+                    <div class="node-header">
+                        <span class="node-type">WORKFLOW // 01</span>
+                        <h3 class="node-title">LYZERG Portfolio &amp; Pipeline Graph</h3>
+                    </div>
+                    <div class="node-body">
+                        <p>
+                            A computational artist portfolio featuring an interactive Nuke-style node graph of technical skills, project case studies, VFX production credits, and pipeline engineering work.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">GitHub Pages</span>
+                            <span class="tech-tag">TMDb API</span>
+                            <span class="tech-tag">Responsive Web Design</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                        <div class="node-io">
+                            <div class="io-line"><span>[IN]</span> HTML / CSS / JavaScript / Git</div>
+                            <div class="io-line"><span>[OUT]</span> GitHub Pages Deployment</div>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <a href="https://github.com/edgarciavfx/edgarciavfx.github.io" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="node-card">
+                    <div class="node-header">
+                        <span class="node-type">WORKFLOW // 02</span>
+                        <h3 class="node-title">Production Asset Tracker</h3>
+                    </div>
+                    <div class="node-body">
+                        <p>
+                            A full-stack production management platform inspired by ShotGrid. Supports project tracking, task assignment, status management, authentication, dashboards, and role-based permissions.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">TanStack Query</span>
+                            <span class="tech-tag">Auth.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Prisma</span>
+                            <span class="tech-tag">Vitest</span>
+                            <span class="tech-tag">Railway</span>
+                        </div>
+                        <div class="node-io">
+                            <div class="io-line"><span>[IN]</span> Next.js / TypeScript / PostgreSQL / Prisma</div>
+                            <div class="io-line"><span>[OUT]</span> Railway Deployment</div>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="https://web-production-0f345.up.railway.app" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            <a href="https://github.com/edgarciavfx/production-asset-tracker" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="node-card">
+                    <div class="node-header">
+                        <span class="node-type">WORKFLOW // 03</span>
+                        <h3 class="node-title">Plate</h3>
+                    </div>
+                    <div class="node-body">
+                        <p>
+                            A desktop utility for VFX and AI artists that enables rapid frame-range selection and EXR sequence export from video plates. Replaces a multi-step Nuke workflow with a single focused tool: open a plate, select IN and OUT points, export an EXR sequence.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PySide6</span>
+                            <span class="tech-tag">FFmpeg</span>
+                            <span class="tech-tag">FFprobe</span>
+                        </div>
+                        <div class="node-io">
+                            <div class="io-line"><span>[IN]</span> Video Plate / PySide6 / FFmpeg</div>
+                            <div class="io-line"><span>[OUT]</span> EXR Sequence</div>
+                        </div>
+                        <div class="project-card__links">
+                            <span class="project-link project-link--disabled">Live Demo</span>
+                            <a href="https://github.com/edgarciavfx/plate" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="vfx-credits" id="vfx-credits">
+        <div class="container">
+            <h2 class="section-title">VFX Credits</h2>
+            <p class="vfx-credits__caption">Selected productions I contributed to as a VFX Compositor.</p>
+            <div class="vfx-gallery" id="vfxGallery" role="region" aria-label="VFX productions gallery"></div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="contact__intro">
+                I'm always interested in collaborating on exciting projects. Feel free to reach out!
+            </p>
+            <div class="contact__links">
+                <a href="https://github.com/edgarciavfx" class="contact-link" title="GitHub" aria-label="Visit my GitHub profile">
+                    <svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/edgarciavfx" class="contact-link" title="LinkedIn" aria-label="Visit my LinkedIn profile">
+                    <svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.731-2.004 1.438-.103.25-.129.599-.129.948v5.419h-3.554s.05-8.787 0-9.703h3.554v1.374c.43-.665 1.199-1.61 2.919-1.61 2.134 0 3.734 1.398 3.734 4.405v5.534zM5.337 8.855c-1.144 0-1.915-.759-1.915-1.71 0-.956.77-1.71 1.965-1.71 1.194 0 1.916.754 1.94 1.71 0 .951-.746 1.71-1.99 1.71zm1.582 11.597H3.635V9.236h3.284v11.216zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+            <form class="contact__form" action="https://formspree.io/f/mrevzzke" method="POST">
+                <input type="text" name="_gotcha" style="display:none" aria-hidden="true">
+                <input type="hidden" name="_subject" value="Portfolio Contact">
+                <div class="form-group">
+                    <label for="contact-name" class="sr-only">Your Name</label>
+                    <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email" class="sr-only">Your Email</label>
+                    <input type="email" id="contact-email" name="_replyto" class="form-input" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message" class="sr-only">Your Message</label>
+                    <textarea id="contact-message" name="message" class="form-textarea" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__brand">LYZERG</p>
+            <p class="footer__text">VFX Artist &amp; Software Developer</p>
+            <p class="footer__sig">lzg</p>
+        </div>
+        <div class="footer__lut" aria-hidden="true">
+            <div class="footer__lut-swatch"></div>
+            <div class="footer__lut-swatch"></div>
+            <div class="footer__lut-swatch"></div>
+            <div class="footer__lut-swatch"></div>
+            <div class="footer__lut-swatch"></div>
+            <div class="footer__lut-swatch"></div>
+        </div>
+    </footer>
+
+    <script src="force-graph-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

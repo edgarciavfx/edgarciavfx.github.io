@@ -1,0 +1,131 @@
+const SKILLS_DATA = {
+  nodes: [
+    // VFX & Compositing — Core
+    {id: "Nuke", group: "vfx", val: 3},
+    {id: "OpenColorIO", group: "vfx", val: 3},
+    {id: "Compositing", group: "vfx", val: 3},
+    {id: "Color Space Management", group: "vfx", val: 3},
+    {id: "EXR Workflows", group: "vfx", val: 2},
+    {id: "Rotoscoping", group: "vfx", val: 2},
+    {id: "Keying", group: "vfx", val: 2},
+    {id: "Tracking", group: "vfx", val: 2},
+    {id: "Deep Compositing", group: "vfx", val: 1},
+    {id: "Stereo Compositing", group: "vfx", val: 1},
+    {id: "Color Grading", group: "vfx", val: 2},
+
+    // AI & Generative Workflows — Core
+    {id: "ComfyUI", group: "ai", val: 3},
+    {id: "Custom Nodes", group: "ai", val: 3},
+    {id: "Workflow Design", group: "ai", val: 3},
+    {id: "Diffusion Models", group: "ai", val: 2},
+    {id: "Griptape", group: "ai", val: 2},
+    {id: "ControlNet", group: "ai", val: 2},
+    {id: "Model Orchestration", group: "ai", val: 2},
+    {id: "Multi-Agent Systems", group: "ai", val: 1},
+    {id: "IP-Adapter", group: "ai", val: 1},
+    {id: "LoRA", group: "ai", val: 1},
+
+    // Pipeline & Automation — Primary
+    {id: "Python", group: "pipe", val: 3},
+    {id: "PySide/PyQt", group: "pipe", val: 2},
+    {id: "FFmpeg", group: "pipe", val: 2},
+    {id: "Batch Processing", group: "pipe", val: 2},
+    {id: "Asset Management", group: "pipe", val: 2},
+    {id: "ShotGrid Integration", group: "pipe", val: 2},
+    {id: "Shell/Bash", group: "pipe", val: 2},
+    {id: "OpenImageIO", group: "pipe", val: 1},
+    {id: "Pipeline Tools", group: "pipe", val: 2},
+
+    // Software Engineering — Primary
+    {id: "TypeScript", group: "eng", val: 2},
+    {id: "JavaScript", group: "eng", val: 2},
+    {id: "Next.js", group: "eng", val: 2},
+    {id: "Node.js", group: "eng", val: 2},
+    {id: "Git", group: "eng", val: 2},
+    {id: "React", group: "eng", val: 1},
+    {id: "PostgreSQL", group: "eng", val: 1},
+    {id: "Docker", group: "eng", val: 1},
+    {id: "CI/CD", group: "eng", val: 1},
+    {id: "REST APIs", group: "eng", val: 1},
+    {id: "HTML/CSS", group: "eng", val: 1},
+    {id: "GitHub", group: "eng", val: 1},
+
+    // Production Hardening — Supporting
+    {id: "Technical Troubleshooting", group: "prod", val: 3},
+    {id: "Deadline Management", group: "prod", val: 2},
+    {id: "Cross-Team Collaboration", group: "prod", val: 2},
+    {id: "Quality Control", group: "prod", val: 2},
+    {id: "Process Documentation", group: "prod", val: 2},
+    {id: "Client Feedback", group: "prod", val: 1},
+  ],
+
+  links: [
+    // VFX adjacency
+    {source: "Nuke", target: "OpenColorIO"},
+    {source: "Nuke", target: "Compositing"},
+    {source: "Nuke", target: "EXR Workflows"},
+    {source: "Nuke", target: "Rotoscoping"},
+    {source: "Nuke", target: "Keying"},
+    {source: "Nuke", target: "Tracking"},
+    {source: "Nuke", target: "Deep Compositing"},
+    {source: "Nuke", target: "Stereo Compositing"},
+    {source: "Nuke", target: "Color Grading"},
+    {source: "OpenColorIO", target: "Color Space Management"},
+    {source: "Compositing", target: "Color Grading"},
+    {source: "Compositing", target: "Keying"},
+    {source: "EXR Workflows", target: "OpenColorIO"},
+    {source: "EXR Workflows", target: "OpenImageIO"},
+
+    // AI adjacency
+    {source: "ComfyUI", target: "Custom Nodes"},
+    {source: "ComfyUI", target: "Workflow Design"},
+    {source: "ComfyUI", target: "Diffusion Models"},
+    {source: "ComfyUI", target: "ControlNet"},
+    {source: "ComfyUI", target: "IP-Adapter"},
+    {source: "ComfyUI", target: "LoRA"},
+    {source: "Custom Nodes", target: "Griptape"},
+    {source: "Griptape", target: "Multi-Agent Systems"},
+    {source: "Griptape", target: "Model Orchestration"},
+    {source: "Diffusion Models", target: "ControlNet"},
+    {source: "Diffusion Models", target: "LoRA"},
+    {source: "Diffusion Models", target: "IP-Adapter"},
+    {source: "Workflow Design", target: "Batch Processing"},
+
+    // Pipeline adjacency
+    {source: "Python", target: "PySide/PyQt"},
+    {source: "Python", target: "Batch Processing"},
+    {source: "Python", target: "Asset Management"},
+    {source: "Python", target: "Shell/Bash"},
+    {source: "FFmpeg", target: "Batch Processing"},
+    {source: "OpenImageIO", target: "EXR Workflows"},
+    {source: "ShotGrid Integration", target: "Asset Management"},
+    {source: "Asset Management", target: "Pipeline Tools"},
+
+    // Software Engineering adjacency
+    {source: "TypeScript", target: "JavaScript"},
+    {source: "TypeScript", target: "Next.js"},
+    {source: "JavaScript", target: "Node.js"},
+    {source: "JavaScript", target: "React"},
+    {source: "Next.js", target: "React"},
+    {source: "Next.js", target: "Node.js"},
+    {source: "Node.js", target: "REST APIs"},
+    {source: "Git", target: "GitHub"},
+    {source: "Git", target: "CI/CD"},
+    {source: "Docker", target: "CI/CD"},
+    {source: "PostgreSQL", target: "REST APIs"},
+    {source: "HTML/CSS", target: "React"},
+
+    // Production adjacency
+    {source: "Technical Troubleshooting", target: "Quality Control"},
+    {source: "Technical Troubleshooting", target: "Process Documentation"},
+    {source: "Deadline Management", target: "Cross-Team Collaboration"},
+    {source: "Cross-Team Collaboration", target: "Client Feedback"},
+
+    // Cross-category connections
+    {source: "Nuke", target: "Python"},
+    {source: "Custom Nodes", target: "Python"},
+    {source: "Batch Processing", target: "Deadline Management"},
+    {source: "Color Grading", target: "Color Space Management"},
+    {source: "Pipeline Tools", target: "ShotGrid Integration"},
+  ],
+};
