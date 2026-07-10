@@ -47,7 +47,7 @@
     --spacing-5xl: 7.5rem;
     --container-width: 1200px;
     --container-padding: 2rem;
-    --section-padding: 7.5rem;
+    --section-padding: 4.5rem;
     --transition-duration-fast: 150ms;
     --transition-duration-base: 300ms;
     --transition-duration-slow: 500ms;
@@ -187,6 +187,28 @@ section:last-of-type {
     gap: 0;
 }
 
+.navbar__brand {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    flex-shrink: 0;
+}
+
+.navbar__brand img {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    border: 1px solid var(--color-border-light);
+    transition: transform var(--transition-duration-base) var(--transition-timing),
+                box-shadow var(--transition-duration-base) var(--transition-timing);
+}
+
+.navbar__brand:hover img {
+    transform: scale(1.06);
+    box-shadow: 0 0 0 1px var(--color-accent-secondary), var(--glow-sm);
+}
+
 .navbar__menu-toggle {
     display: none;
 }
@@ -237,6 +259,15 @@ section:last-of-type {
         border-radius: 12px;
         padding: 0.5rem 1rem;
         width: auto;
+    }
+
+    .navbar__brand {
+        margin-right: 0.75rem;
+    }
+
+    .navbar__brand img {
+        width: 30px;
+        height: 30px;
     }
 
     .navbar__menu-toggle {
@@ -320,7 +351,7 @@ section:last-of-type {
 }
 
 .hero {
-    padding: 10rem 0 8rem;
+    padding: 10rem 0 5rem;
     position: relative;
     min-height: 100vh;
     display: flex;
@@ -584,161 +615,69 @@ section:last-of-type {
     font-family: var(--font-family-mono);
 }
 
-.skill-tree-container {
-    width: 100%;
-    background: var(--color-bg-secondary);
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    padding: 2rem;
-    margin-bottom: 3rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.skill-tree__search-wrapper {
-    position: relative;
-    margin-bottom: 1.5rem;
-}
-
-.skill-tree__search-icon {
-    position: absolute;
-    left: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--color-text-muted);
-    pointer-events: none;
-}
-
-.skill-tree__search {
-    width: 100%;
-    padding: 0.875rem 1rem 0.875rem 2.75rem;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-    color: var(--color-text-primary);
-    font-family: var(--font-family-mono);
-    font-size: var(--font-size-sm);
-    outline: none;
-    transition: border-color var(--transition-duration-base) var(--transition-timing),
-                box-shadow var(--transition-duration-base) var(--transition-timing);
-}
-
-.skill-tree__search::placeholder {
-    color: var(--color-text-muted);
-}
-
-.skill-tree__search:focus {
-    border-color: var(--color-accent-primary);
-    box-shadow: 0 0 0 3px rgba(155, 54, 32, 0.2);
-}
-
-.node-graph__canvas {
-    display: block;
-    cursor: grab;
-    border-radius: 4px;
-}
-
-.node-graph__canvas:active {
-    cursor: grabbing;
-}
-
-.node-graph__canvas.loading {
-    opacity: 0;
-}
-
-.skill-tree__error {
-    text-align: center;
-    color: var(--color-text-muted);
-    font-family: var(--font-family-mono);
-    padding: 3rem 0;
-}
-
-.skill-tree__summary {
-    margin-top: 1.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--color-border);
-    text-align: center;
-    font-family: var(--font-family-mono);
-    font-size: var(--font-size-xs);
-    color: var(--color-text-muted);
-}
-
-/* Node graph tooltip (DOM overlay for canvas) */
-.node-graph-tooltip {
-    position: fixed;
-    background: rgba(11, 11, 12, 0.96);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(155, 54, 32, 0.3);
-    border-radius: 8px;
-    padding: 0.875rem 1rem;
-    pointer-events: none;
-    z-index: 10000;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    min-width: 160px;
-    max-width: 240px;
-}
-
-.node-graph-tooltip__name {
-    font-family: var(--font-family-heading);
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-primary);
-    margin-bottom: 0.25rem;
-}
-
-.node-graph-tooltip__level {
-    font-family: var(--font-family-mono);
-    font-size: 0.6875rem;
-    color: var(--color-accent-primary);
-    margin-bottom: 0.5rem;
-}
-
-.node-graph-tooltip__cat {
-    font-family: var(--font-family-mono);
-    font-size: 0.625rem;
-    color: var(--color-text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 0.25rem;
-}
-
-.node-graph-tooltip__related-label {
-    font-family: var(--font-family-mono);
-    font-size: 0.625rem;
-    color: var(--color-text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 0.375rem;
-    padding-top: 0.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.node-graph-tooltip__related {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-}
-
-.node-graph-tooltip__related-skill {
-    font-family: var(--font-family-mono);
-    font-size: 0.6875rem;
-    color: var(--color-text-secondary);
-    background: rgba(255, 255, 255, 0.04);
-    padding: 0.125rem 0.375rem;
-    border-radius: 4px;
-}
-
-@media (max-width: 1024px) {
-    .skill-tree-container {
-        padding: 1.5rem;
-    }
+.skills__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
 }
 
 @media (max-width: 768px) {
-    .skill-tree-container {
-        padding: 1rem;
-        margin-bottom: 2rem;
+    .skills__grid {
+        grid-template-columns: 1fr;
     }
+}
+
+.skill-card {
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-card:hover {
+    border-color: var(--color-accent-primary);
+}
+
+.skill-card__tier {
+    padding: 16px;
+}
+
+.skill-card__tier + .skill-card__tier {
+    border-top: 1px dashed var(--color-border);
+}
+
+.skill-tier__label {
+    display: block;
+    font-family: var(--font-family-mono);
+    font-size: 0.6875rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.625rem;
+}
+
+.skill-tier__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skills__supporting {
+    margin-top: 2rem;
+    padding: 1rem 1.25rem;
+    border: 1px dashed var(--color-border);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+}
+
+.skills__supporting .skill-tier__label {
+    margin-bottom: 0;
 }
 
 .projects {
@@ -848,6 +787,13 @@ section:last-of-type {
     color: var(--color-accent-primary);
 }
 
+.tech-tag--core {
+    background: rgba(155, 54, 32, 0.12);
+    border-color: rgba(155, 54, 32, 0.45);
+    color: var(--color-text-primary);
+    font-size: 0.75rem;
+}
+
 .project-card__links {
     display: flex;
     gap: 0.75rem;
@@ -886,6 +832,22 @@ section:last-of-type {
     background: transparent;
     color: var(--color-text-muted);
     border-color: var(--color-border);
+}
+
+/* Prominent full-width button for GitHub-only cards */
+.project-link--github {
+    padding: 0.75rem 1rem;
+    background: var(--color-accent-primary);
+    border-color: var(--color-accent-primary);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-semibold, 600);
+}
+
+.project-link--github:hover {
+    background: var(--color-accent-primary);
+    border-color: var(--color-accent-primary);
+    color: var(--color-text-primary);
+    filter: brightness(1.15);
 }
 
 .vfx-credits__caption {
@@ -1176,13 +1138,12 @@ section:last-of-type {
 .footer__lut-swatch:nth-child(5) { background: #D48C6A; }
 .footer__lut-swatch:nth-child(6) { background: #9B3620; }
 
-.footer__brand {
-    font-family: var(--font-family-heading);
-    font-size: var(--font-size-2xl);
-    font-weight: var(--font-weight-extrabold);
-    color: var(--color-text-primary);
-    letter-spacing: 0.15em;
-    margin-bottom: 0.75rem;
+.footer__brand-sig {
+    display: block;
+    width: clamp(160px, 30vw, 240px);
+    height: auto;
+    margin: 0 auto 1.25rem;
+    opacity: 0.7;
 }
 
 .footer__text {
@@ -1323,13 +1284,6 @@ section:last-of-type {
         grid-template-columns: 1fr;
     }
 
-    .skill-tree-container {
-        padding: 0.75rem;
-    }
-
-    .node-graph-tooltip {
-        display: none;
-    }
 }
 
 @media (max-width: 380px) {

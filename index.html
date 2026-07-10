@@ -7,11 +7,16 @@
     <meta name="theme-color" content="#0B0B0C">
     <title>Edgar Garcia Padilla | VFX Artist &amp; Software Developer</title>
     <link rel="canonical" href="https://edgarciavfx.github.io">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="navbar__container">
+            <a href="#hero" class="navbar__brand" aria-label="LYZERG — back to top">
+                <img src="lzg-mark.png" alt="LYZERG logo" width="34" height="34">
+            </a>
             <button class="navbar__menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="hamburger"></span>
                 <span class="hamburger"></span>
@@ -88,20 +93,122 @@
 
     <section class="skills" id="skills">
         <div class="container">
-            <h2 class="section-title">Pipeline Graph</h2>
+            <h2 class="section-title">Technical Skills</h2>
             <p class="skills__description">
-                Node graph &mdash; explore my technical pipeline across VFX compositing, generative workflows, and engineering.
+                Digital compositing, generative AI workflows, and the pipeline engineering that connects them.
             </p>
-            <div class="skill-tree-container">
-                <div class="skill-tree__search-wrapper">
-                    <svg class="skill-tree__search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="11" cy="11" r="8"/>
-                        <path d="m21 21-4.35-4.35"/>
-                    </svg>
-                    <input type="text" class="skill-tree__search" id="skillSearch" placeholder="Search skills..." aria-label="Search skills">
+            <div class="skills__grid">
+                <article class="skill-card">
+                    <div class="node-header">
+                        <span class="node-type">NODE // 01</span>
+                        <h3 class="node-title">Compositing &amp; Color</h3>
+                    </div>
+                    <div class="skill-card__tier">
+                        <span class="skill-tier__label">Core</span>
+                        <div class="skill-tier__tags">
+                            <span class="tech-tag tech-tag--core">Nuke</span>
+                            <span class="tech-tag tech-tag--core">Compositing</span>
+                            <span class="tech-tag tech-tag--core">OpenColorIO / Color Management</span>
+                            <span class="tech-tag tech-tag--core">EXR Workflows</span>
+                        </div>
+                    </div>
+                    <div class="skill-card__tier">
+                        <span class="skill-tier__label">Working</span>
+                        <div class="skill-tier__tags">
+                            <span class="tech-tag">After Effects</span>
+                            <span class="tech-tag">Mocha</span>
+                            <span class="tech-tag">DaVinci Resolve</span>
+                            <span class="tech-tag">Keying</span>
+                            <span class="tech-tag">Rotoscoping</span>
+                            <span class="tech-tag">Tracking</span>
+                            <span class="tech-tag">ShotGrid Workflows</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="node-header">
+                        <span class="node-type">NODE // 02</span>
+                        <h3 class="node-title">Generative AI Workflows</h3>
+                    </div>
+                    <div class="skill-card__tier">
+                        <span class="skill-tier__label">Core</span>
+                        <div class="skill-tier__tags">
+                            <span class="tech-tag tech-tag--core">ComfyUI</span>
+                            <span class="tech-tag tech-tag--core">Node-Based Workflow Design</span>
+                            <span class="tech-tag tech-tag--core">Custom Nodes</span>
+                        </div>
+                    </div>
+                    <div class="skill-card__tier">
+                        <span class="skill-tier__label">Working</span>
+                        <div class="skill-tier__tags">
+                            <span class="tech-tag">Diffusion Models</span>
+                            <span class="tech-tag">ControlNet / LoRA</span>
+                            <span class="tech-tag">Procedural Image Generation</span>
+                            <span class="tech-tag">Human-in-the-Loop Tooling</span>
+                            <span class="tech-tag">MCP</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="node-header">
+                        <span class="node-type">NODE // 03</span>
+                        <h3 class="node-title">Pipeline &amp; Tooling</h3>
+                    </div>
+                    <div class="skill-card__tier">
+                        <span class="skill-tier__label">Core</span>
+                        <div class="skill-tier__tags">
+                            <span class="tech-tag tech-tag--core">Python 3.13+</span>
+                            <span class="tech-tag tech-tag--core">PySide6</span>
+                            <span class="tech-tag tech-tag--core">FFmpeg / FFprobe</span>
+                        </div>
+                    </div>
+                    <div class="skill-card__tier">
+                        <span class="skill-tier__label">Working</span>
+                        <div class="skill-tier__tags">
+                            <span class="tech-tag">CLI Tools</span>
+                            <span class="tech-tag">Batch Processing</span>
+                            <span class="tech-tag">Shell / Bash</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="node-header">
+                        <span class="node-type">NODE // 04</span>
+                        <h3 class="node-title">Software Engineering</h3>
+                    </div>
+                    <div class="skill-card__tier">
+                        <span class="skill-tier__label">Core</span>
+                        <div class="skill-tier__tags">
+                            <span class="tech-tag tech-tag--core">TypeScript</span>
+                            <span class="tech-tag tech-tag--core">JavaScript</span>
+                            <span class="tech-tag tech-tag--core">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-card__tier">
+                        <span class="skill-tier__label">Working</span>
+                        <div class="skill-tier__tags">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">SQL (PostgreSQL / SQLite)</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">GitHub Actions (CI/CD)</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="skills__supporting">
+                <span class="skill-tier__label">3D Foundations</span>
+                <div class="skill-tier__tags">
+                    <span class="tech-tag">Real-Time Engines</span>
+                    <span class="tech-tag">Environment Blockouts</span>
+                    <span class="tech-tag">Lighting</span>
+                    <span class="tech-tag">Camera Composition</span>
                 </div>
-                <div class="skill-tree" id="skillTree" aria-label="Technical skills node graph"></div>
-                <div class="skill-tree__summary" id="skillTreeSummary"></div>
             </div>
         </div>
     </section>
@@ -117,21 +224,21 @@
                     </div>
                     <div class="node-body">
                         <p>
-                            A desktop utility for VFX and AI artists that enables rapid frame-range selection and EXR sequence export from video plates. Replaces a multi-step Nuke workflow with a single focused tool: open a plate, select IN and OUT points, export an EXR sequence.
+                            A desktop and CLI utility for VFX and AI artists that collapses a multi-step Nuke workflow into one focused tool: load a video plate, scrub the timeline with draggable handles, set IN/OUT points, and export a production-ready shot folder. Handles proxy generation with burn-ins, LUT/OCIO color transforms, Nuke script generation, and background batch rendering via a shot queue.
                         </p>
                         <div class="project-card__tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">PySide6</span>
                             <span class="tech-tag">FFmpeg</span>
                             <span class="tech-tag">FFprobe</span>
+                            <span class="tech-tag">OpenColorIO</span>
                         </div>
                         <div class="node-io">
-                            <div class="io-line"><span>[IN]</span> Video Plate / PySide6 / FFmpeg</div>
-                            <div class="io-line"><span>[OUT]</span> EXR Sequence</div>
+                            <div class="io-line"><span>[IN]</span> Video plate + IN/OUT frame range</div>
+                            <div class="io-line"><span>[OUT]</span> EXR sequence + H.264 proxy + manifest.json</div>
                         </div>
                         <div class="project-card__links">
-                            <span class="project-link project-link--disabled">Live Demo</span>
-                            <a href="https://github.com/edgarciavfx/plate" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://github.com/edgarciavfx/plate" class="project-link project-link--github" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                         </div>
                     </div>
                 </article>
@@ -139,30 +246,28 @@
                 <article class="node-card">
                     <div class="node-header">
                         <span class="node-type">WORKFLOW // 02</span>
-                        <h3 class="node-title">Production Asset Tracker</h3>
+                        <h3 class="node-title">Flipbook</h3>
                     </div>
                     <div class="node-body">
                         <p>
-                            A full-stack production management platform inspired by ShotGrid. Supports project tracking, task assignment, status management, authentication, dashboards, and role-based permissions.
+                            A local-first review tool for compositing work, organized hierarchically &mdash; Project &rarr; Shot &rarr; Version &rarr; frame. Delivers frame-accurate playback and frame-by-frame stepping without browser seek artifacts, drawn and text annotations anchored to specific frames, status tracking (WIP &rarr; Needs Review &rarr; Approved), and one-click jumps back to the source Nuke script. Everything stays on disk &mdash; nothing is uploaded.
                         </p>
                         <div class="project-card__tech">
                             <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">React</span>
                             <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Drizzle</span>
                             <span class="tech-tag">Tailwind</span>
-                            <span class="tech-tag">TanStack Query</span>
-                            <span class="tech-tag">Auth.js</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Prisma</span>
-                            <span class="tech-tag">Vitest</span>
-                            <span class="tech-tag">Railway</span>
+                            <span class="tech-tag">Radix UI</span>
+                            <span class="tech-tag">FFmpeg</span>
                         </div>
                         <div class="node-io">
-                            <div class="io-line"><span>[IN]</span> Next.js / TypeScript / PostgreSQL / Prisma</div>
-                            <div class="io-line"><span>[OUT]</span> Railway Deployment</div>
+                            <div class="io-line"><span>[IN]</span> Shot versions (.mov / EXR / DPX) + Nuke Write metadata</div>
+                            <div class="io-line"><span>[OUT]</span> Frame-accurate playback + annotations + review status</div>
                         </div>
                         <div class="project-card__links">
-                            <a href="https://web-production-0f345.up.railway.app" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo</a>
-                            <a href="https://github.com/edgarciavfx/production-asset-tracker" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://github.com/edgarciavfx/production-asset-tracker" class="project-link project-link--github" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                         </div>
                     </div>
                 </article>
@@ -174,7 +279,7 @@
                     </div>
                     <div class="node-body">
                         <p>
-                            A terminal tool to watch Claude drive ComfyUI Cloud live over MCP. Connects to the Comfy Cloud websocket and prints a plain-line log of execution events — queue, node progression, progress %, done/error — and can save denoising preview frames.
+                            A terminal tool to watch Claude drive ComfyUI Cloud live over MCP. Connects to the Comfy Cloud WebSocket and prints a plain-line log of execution events &mdash; queue, node progression, progress %, done/error &mdash; while auto-opening the workflow graph in the browser. A <code>--save</code> flag captures denoising preview frames, and <code>--raw</code> dumps unfiltered frames for protocol debugging.
                         </p>
                         <div class="project-card__tech">
                             <span class="tech-tag">Python</span>
@@ -183,12 +288,11 @@
                             <span class="tech-tag">ComfyUI Cloud</span>
                         </div>
                         <div class="node-io">
-                            <div class="io-line"><span>[IN]</span> Comfy Cloud WebSocket / Python</div>
-                            <div class="io-line"><span>[OUT]</span> Live Terminal Execution Log</div>
+                            <div class="io-line"><span>[IN]</span> Comfy Cloud WebSocket URL (clientId + token)</div>
+                            <div class="io-line"><span>[OUT]</span> Live terminal execution log + saved preview frames</div>
                         </div>
                         <div class="project-card__links">
-                            <span class="project-link project-link--disabled">Live Demo</span>
-                            <a href="https://github.com/edgarciavfx/comfy-watch" class="project-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://github.com/edgarciavfx/comfy-watch" class="project-link project-link--github" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                         </div>
                     </div>
                 </article>
@@ -246,7 +350,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="footer__brand">LYZERG</p>
+            <img src="lzg-sign-white.png" class="footer__brand-sig" alt="lyzerg signature" width="240">
             <p class="footer__text">VFX Artist &amp; Software Developer</p>
             <p class="footer__sig">lzg</p>
         </div>
@@ -260,7 +364,6 @@
         </div>
     </footer>
 
-    <script src="force-graph-data.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
