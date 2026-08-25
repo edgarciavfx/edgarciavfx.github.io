@@ -1,396 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Edgar Garcia Padilla — Visual Development Artist, AI Workflow Developer & Digital Compositor. Compositing, generative AI workflows, and the pipeline tools that connect them.">
-    <meta name="theme-color" content="#0B0B0C">
-    <title>Edgar Garcia Padilla | Visual Development Artist &amp; AI Workflow Developer</title>
-    <link rel="canonical" href="https://edgarciavfx.github.io">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Edgar Garcia Padilla — Full Stack Developer in Guadalajara, Mexico. TypeScript, React/Next.js and PostgreSQL on the web; Python for the tools that live outside the browser. Business analysis and custom software for SMBs.">
+<meta name="theme-color" content="#F5F6F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1117" media="(prefers-color-scheme: dark)">
+<title>Edgar Garcia Padilla — Full Stack Developer</title>
+<link rel="canonical" href="https://edgarciavfx.github.io">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
-        <div class="navbar__container">
-            <a href="#hero" class="navbar__brand" aria-label="LYZERG — back to top">
-                <img src="lzg-mark.png" alt="LYZERG logo" width="34" height="34">
-            </a>
-            <button class="navbar__menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
-                <span class="hamburger"></span>
-            </button>
-            <ul class="navbar__links">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#vfx-credits" class="nav-link">VFX Work</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+
+<nav class="nav">
+  <div class="shell nav__in">
+    <a class="nav__brand" href="#top">
+      <b>Edgar Garcia</b>
+    </a>
+    <ul class="nav__links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#consulting">Consulting</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#before">Before</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="shell">
+    <p class="badge"><i></i>Open to full stack roles · Guadalajara &amp; remote</p>
+    <h1>I build the software that <span>removes the manual step</span>.</h1>
+    <p class="hero__lede">
+      Full stack developer. Web applications end to end in TypeScript, React/Next.js and
+      PostgreSQL — and Python when the problem lives outside the browser.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--solid" href="Edgar_Garcia_Padilla_Full_Stack_Developer_CV.pdf">Résumé (PDF)</a>
+      <a class="btn" href="https://github.com/edgarciavfx">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/edgarciavfx/">LinkedIn</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<section id="consulting">
+  <div class="shell">
+    <p class="eyebrow">What I'm doing now</p>
+    <h2>Business analysis, then the software the analysis calls for</h2>
+    <div class="prose">
+      <p>
+        Since July 2026 I've been consulting independently for small and mid-sized
+        businesses in Jalisco: going into the real operation, mapping the process as it
+        actually runs, crossing the numbers, and then building what the findings point at.
+      </p>
+      <p>
+        On a recent engagement with a medical-apparel manufacturer, I consolidated raw
+        sales, invoicing and accounting exports into a single analytical view. The
+        headline finding wasn't in any of their reports:
+      </p>
+    </div>
+
+    <div class="figs">
+      <div class="fig"><b>99</b><small>days of DSO, measured — never previously calculated</small></div>
+      <div class="fig"><b>~50%</b><small>of invoiced revenue sitting uncollected</small></div>
+      <div class="fig"><b>330</b><small>data anomalies across disconnected systems</small></div>
+      <div class="fig"><b>94</b><small>spellings of one customer's name, making per-client margin uncomputable</small></div>
+    </div>
+
+    <div class="prose">
+      <p>
+        The finding I'm proudest of took reading formulas rather than numbers: a
+        current-year P&amp;L that reconciled perfectly against its own parts while its
+        revenue row summed <em>last year's</em> workbook. It surfaced only because the
+        analysis crossed the books against a source the client doesn't type by hand —
+        their stamped tax receipts. The readers that made that possible are open source
+        as <a href="https://github.com/edgarciavfx/mxbooks">mxbooks</a>.
+      </p>
+      <p>
+        I also mapped the full order-to-invoice flow in per-role swimlanes, reconciled
+        real per-product margin against the published price list, and scoped a
+        mobile-first inventory system built around how the operations lead actually works
+        on the floor.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="shell">
+    <p class="eyebrow">Selected work</p>
+    <h2>Things I've built and shipped</h2>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="card__top">
+          <h3>Flipbook</h3>
+          <span class="card__kind">Web app</span>
         </div>
-    </nav>
-
-    <header class="hero" id="hero">
-        <div class="container hero__container">
-            <div class="status-badge"><span class="status-dot"></span>Available for Compositing, Visual Development &amp; AI Workflow Roles</div>
-            <h1 class="hero__title">Visual development artist<br>who learned to code<br>so the art wouldn't <span class="accent-text">wait</span>.</h1>
-            <p class="hero__headline">Visual Development Artist &middot; AI Workflow Developer &middot; Digital Compositor</p>
-            <p class="hero__subtitle">
-                Compositing, generative AI workflows, and the pipeline tools that connect them &mdash; built at the intersection of artistry and automation. Based in Guadalajara, shipping work for Hollywood, Netflix, and beyond.
-            </p>
-            <div class="hero__cta">
-                <a href="#projects" class="button button--primary">View Projects</a>
-                <a href="https://vimeo.com/1114524547" class="button button--secondary" target="_blank" rel="noopener noreferrer">Demo Reel</a>
-                <a href="./Edgar_Garcia_Padilla_Resume.pdf" class="button button--secondary">Resume</a>
-                <a href="https://github.com/edgarciavfx" class="button button--tertiary">GitHub</a>
-            </div>
-            <div class="hero__wipe" aria-hidden="true"></div>
+        <p>
+          Review and tracking app for versioned media. Frame-accurate playback and
+          stepping without browser seek artifacts, vector annotations anchored to a
+          specific frame, threaded notes and per-version status. Local-first — one
+          process serves the UI, the API, media streaming and the transcode pipeline;
+          nothing is uploaded.
+        </p>
+        <div class="tags">
+          <span>Next.js 16</span><span>React 19</span><span>TypeScript</span>
+          <span>SQLite</span><span>Drizzle</span><span>Tailwind</span><span>Playwright</span>
         </div>
-    </header>
-
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">Artist &amp; Engineer</h2>
-            <div class="about__content">
-                <div class="about__text">
-                    <p class="about__intro">
-                        I'm a VFX compositor and software developer &mdash; a hybrid who bridges artistry with engineering.
-                    </p>
-                    <p>
-                        It started with a <em>Stalingrad</em> breakdown. Watching set extensions, keying, and explosions composited together in Nuke clicked something in me. That curiosity took me from Guadalajara to Vancouver Film School, then into production &mdash; shipping VFX for MPC, Ingenuity Studios, La Covacha, and beyond.
-                    </p>
-                    <p>
-                        Over 6+ years in production, I've been the artist staring at a slow workflow. So I learned to build the fix. Now I create desktop utilities, pipeline tools, and web applications that reduce friction for the artists on the other side.
-                    </p>
-                    <div class="about__journey">
-                        <div class="journey-point">
-                            <h3>Artist First</h3>
-                            <p>
-                                I've been in the chair. I know what slows a compositor down, what breaks in a render, what a bad pipeline feels like. Every tool I build starts from that perspective.
-                            </p>
-                        </div>
-                        <div class="journey-point">
-                            <h3>Bridging Worlds</h3>
-                            <p>
-                                VFX compositing and software engineering aren't separate disciplines for me. I speak Nuke and Next.js, PySide and PostgreSQL &mdash; and I build the bridge between them.
-                            </p>
-                        </div>
-                        <div class="journey-point">
-                            <h3>Ship Mentality</h3>
-                            <p>
-                                From MPC to Ingenuity Studios, I've delivered under real deadlines. I know what breaks in production, and I build things that don't.
-                            </p>
-                        </div>
-                    </div>
-                    <p class="about__education">
-                        Vancouver Film School &middot; Universidad Marista &middot; Guadalajara, Mexico
-                    </p>
-                </div>
-            </div>
+        <div class="card__links">
+          <a href="https://github.com/edgarciavfx/production-asset-tracker">Source →</a>
         </div>
-    </section>
+      </article>
 
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <p class="skills__description">
-                Digital compositing, generative AI workflows, and the pipeline engineering that connects them.
-            </p>
-            <div class="skills__grid">
-                <article class="skill-card">
-                    <div class="node-header">
-                        <span class="node-type">NODE // 01</span>
-                        <h3 class="node-title">Compositing &amp; Color</h3>
-                    </div>
-                    <div class="skill-card__tier">
-                        <span class="skill-tier__label">Core</span>
-                        <div class="skill-tier__tags">
-                            <span class="tech-tag tech-tag--core">Nuke</span>
-                            <span class="tech-tag tech-tag--core">Compositing</span>
-                            <span class="tech-tag tech-tag--core">OpenColorIO / Color Management</span>
-                            <span class="tech-tag tech-tag--core">EXR Workflows</span>
-                        </div>
-                    </div>
-                    <div class="skill-card__tier">
-                        <span class="skill-tier__label">Working</span>
-                        <div class="skill-tier__tags">
-                            <span class="tech-tag">After Effects</span>
-                            <span class="tech-tag">Mocha</span>
-                            <span class="tech-tag">DaVinci Resolve</span>
-                            <span class="tech-tag">Keying</span>
-                            <span class="tech-tag">Rotoscoping</span>
-                            <span class="tech-tag">Tracking</span>
-                            <span class="tech-tag">ShotGrid Workflows</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="skill-card">
-                    <div class="node-header">
-                        <span class="node-type">NODE // 02</span>
-                        <h3 class="node-title">Generative AI Workflows</h3>
-                    </div>
-                    <div class="skill-card__tier">
-                        <span class="skill-tier__label">Core</span>
-                        <div class="skill-tier__tags">
-                            <span class="tech-tag tech-tag--core">ComfyUI</span>
-                            <span class="tech-tag tech-tag--core">Node-Based Workflow Design</span>
-                            <span class="tech-tag tech-tag--core">Custom Nodes</span>
-                        </div>
-                    </div>
-                    <div class="skill-card__tier">
-                        <span class="skill-tier__label">Working</span>
-                        <div class="skill-tier__tags">
-                            <span class="tech-tag">Diffusion Models</span>
-                            <span class="tech-tag">ControlNet / LoRA</span>
-                            <span class="tech-tag">Procedural Image Generation</span>
-                            <span class="tech-tag">Human-in-the-Loop Tooling</span>
-                            <span class="tech-tag">MCP</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="skill-card">
-                    <div class="node-header">
-                        <span class="node-type">NODE // 03</span>
-                        <h3 class="node-title">Pipeline &amp; Tooling</h3>
-                    </div>
-                    <div class="skill-card__tier">
-                        <span class="skill-tier__label">Core</span>
-                        <div class="skill-tier__tags">
-                            <span class="tech-tag tech-tag--core">Python 3.13+</span>
-                            <span class="tech-tag tech-tag--core">PySide6</span>
-                            <span class="tech-tag tech-tag--core">FFmpeg / FFprobe</span>
-                        </div>
-                    </div>
-                    <div class="skill-card__tier">
-                        <span class="skill-tier__label">Working</span>
-                        <div class="skill-tier__tags">
-                            <span class="tech-tag">CLI Tools</span>
-                            <span class="tech-tag">Batch Processing</span>
-                            <span class="tech-tag">Shell / Bash</span>
-                            <span class="tech-tag">Git</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="skill-card">
-                    <div class="node-header">
-                        <span class="node-type">NODE // 04</span>
-                        <h3 class="node-title">Software Engineering</h3>
-                    </div>
-                    <div class="skill-card__tier">
-                        <span class="skill-tier__label">Core</span>
-                        <div class="skill-tier__tags">
-                            <span class="tech-tag tech-tag--core">TypeScript</span>
-                            <span class="tech-tag tech-tag--core">JavaScript</span>
-                            <span class="tech-tag tech-tag--core">Node.js</span>
-                        </div>
-                    </div>
-                    <div class="skill-card__tier">
-                        <span class="skill-tier__label">Working</span>
-                        <div class="skill-tier__tags">
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">SQL (PostgreSQL / SQLite)</span>
-                            <span class="tech-tag">REST APIs</span>
-                            <span class="tech-tag">WebSockets</span>
-                            <span class="tech-tag">GitHub Actions (CI/CD)</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="skills__supporting">
-                <span class="skill-tier__label">3D Foundations</span>
-                <div class="skill-tier__tags">
-                    <span class="tech-tag">Real-Time Engines</span>
-                    <span class="tech-tag">Environment Blockouts</span>
-                    <span class="tech-tag">Lighting</span>
-                    <span class="tech-tag">Camera Composition</span>
-                </div>
-            </div>
+      <article class="card">
+        <div class="card__top">
+          <h3>mxbooks</h3>
+          <span class="card__kind">Library</span>
         </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects__grid">
-                <article class="node-card">
-                    <div class="node-header">
-                        <span class="node-type">WORKFLOW // 01</span>
-                        <h3 class="node-title">Plate</h3>
-                    </div>
-                    <div class="node-body">
-                        <p>
-                            A desktop and CLI utility for VFX and AI artists that collapses a multi-step Nuke workflow into one focused tool: load a video plate, scrub the timeline with draggable handles, set IN/OUT points, and export a production-ready shot folder. Handles proxy generation with burn-ins, LUT/OCIO color transforms, Nuke script generation, and background batch rendering via a shot queue.
-                        </p>
-                        <div class="project-card__tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">PySide6</span>
-                            <span class="tech-tag">FFmpeg</span>
-                            <span class="tech-tag">FFprobe</span>
-                            <span class="tech-tag">OpenColorIO</span>
-                        </div>
-                        <div class="node-io">
-                            <div class="io-line"><span>[IN]</span> Video plate + IN/OUT frame range</div>
-                            <div class="io-line"><span>[OUT]</span> EXR sequence + H.264 proxy + manifest.json</div>
-                        </div>
-                        <div class="project-card__links">
-                            <a href="https://github.com/edgarciavfx/plate" class="project-link project-link--github" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="node-card">
-                    <div class="node-header">
-                        <span class="node-type">WORKFLOW // 02</span>
-                        <h3 class="node-title">Flipbook</h3>
-                    </div>
-                    <div class="node-body">
-                        <p>
-                            A local-first review tool for compositing work, organized hierarchically &mdash; Project &rarr; Shot &rarr; Version &rarr; frame. Delivers frame-accurate playback and frame-by-frame stepping without browser seek artifacts, drawn and text annotations anchored to specific frames, status tracking (WIP &rarr; Needs Review &rarr; Approved), and one-click jumps back to the source Nuke script. Everything stays on disk &mdash; nothing is uploaded.
-                        </p>
-                        <div class="project-card__tech">
-                            <span class="tech-tag">Next.js</span>
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">SQLite</span>
-                            <span class="tech-tag">Drizzle</span>
-                            <span class="tech-tag">Tailwind</span>
-                            <span class="tech-tag">Radix UI</span>
-                            <span class="tech-tag">FFmpeg</span>
-                        </div>
-                        <div class="node-io">
-                            <div class="io-line"><span>[IN]</span> Shot versions (.mov / EXR / DPX) + Nuke Write metadata</div>
-                            <div class="io-line"><span>[OUT]</span> Frame-accurate playback + annotations + review status</div>
-                        </div>
-                        <div class="project-card__links">
-                            <a href="https://github.com/edgarciavfx/production-asset-tracker" class="project-link project-link--github" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="node-card">
-                    <div class="node-header">
-                        <span class="node-type">WORKFLOW // 03</span>
-                        <h3 class="node-title">comfy-watch</h3>
-                    </div>
-                    <div class="node-body">
-                        <p>
-                            A terminal tool to watch Claude drive ComfyUI Cloud live over MCP. Connects to the Comfy Cloud WebSocket and prints a plain-line log of execution events &mdash; queue, node progression, progress %, done/error &mdash; while auto-opening the workflow graph in the browser. A <code>--save</code> flag captures denoising preview frames, and <code>--raw</code> dumps unfiltered frames for protocol debugging.
-                        </p>
-                        <div class="project-card__tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">WebSocket</span>
-                            <span class="tech-tag">MCP</span>
-                            <span class="tech-tag">ComfyUI Cloud</span>
-                        </div>
-                        <div class="node-io">
-                            <div class="io-line"><span>[IN]</span> Comfy Cloud WebSocket URL (clientId + token)</div>
-                            <div class="io-line"><span>[OUT]</span> Live terminal execution log + saved preview frames</div>
-                        </div>
-                        <div class="project-card__links">
-                            <a href="https://github.com/edgarciavfx/comfy-watch" class="project-link project-link--github" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="node-card">
-                    <div class="node-header">
-                        <span class="node-type">WORKFLOW // 04</span>
-                        <h3 class="node-title">PlateTrack</h3>
-                    </div>
-                    <div class="node-body">
-                        <p>
-                            A ComfyUI custom node for VFX plate work, published to the ComfyUI Registry (v0.1.0) and discoverable in ComfyUI-Manager by searching &ldquo;PlateTrack&rdquo;. Ships as a one-click install with validation and security checks passing green, bringing plate tracking directly into a node-based generative pipeline.
-                        </p>
-                        <div class="project-card__tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">ComfyUI</span>
-                            <span class="tech-tag">Custom Node</span>
-                            <span class="tech-tag">Comfy Registry</span>
-                        </div>
-                        <div class="node-io">
-                            <div class="io-line"><span>[IN]</span> Plate frames inside a ComfyUI graph</div>
-                            <div class="io-line"><span>[OUT]</span> Tracked plate output + registry-installable node</div>
-                        </div>
-                        <div class="project-card__links">
-                            <a href="https://github.com/edgarciavfx/comfyui-platetrack" class="project-link project-link--github" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-                            <a href="https://registry.comfy.org/publishers/edgarciavfx/nodes/comfyui-platetrack" class="project-link" target="_blank" rel="noopener noreferrer">View on Registry</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
+        <p>
+          Dependency-free readers for the three formats a Mexican business's books arrive
+          in: spreadsheets, stamped CFDI 4.0 receipts, and SAT portal reports. Keeps what
+          normal parsers discard — formula text beside cached values, the stamp UUID
+          rather than the first UUID in the file. 39 tests, CI on Python 3.9–3.13.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>stdlib only</span><span>pytest</span><span>GitHub Actions</span>
         </div>
-    </section>
-
-    <section class="vfx-credits" id="vfx-credits">
-        <div class="container">
-            <h2 class="section-title">VFX Credits</h2>
-            <p class="vfx-credits__caption">Selected productions I contributed to as a VFX Compositor.</p>
-            <div class="vfx-gallery" id="vfxGallery" role="region" aria-label="VFX productions gallery"></div>
+        <div class="card__links">
+          <a href="https://github.com/edgarciavfx/mxbooks">Source →</a>
         </div>
-    </section>
+      </article>
 
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="contact__intro">
-                I'm always interested in collaborating on exciting projects. Feel free to reach out!
-            </p>
-            <div class="contact__links">
-                <a href="https://github.com/edgarciavfx" class="contact-link" title="GitHub" aria-label="Visit my GitHub profile">
-                    <svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/edgarciavfx" class="contact-link" title="LinkedIn" aria-label="Visit my LinkedIn profile">
-                    <svg class="icon" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.986-2.236-1.081 0-1.722.731-2.004 1.438-.103.25-.129.599-.129.948v5.419h-3.554s.05-8.787 0-9.703h3.554v1.374c.43-.665 1.199-1.61 2.919-1.61 2.134 0 3.734 1.398 3.734 4.405v5.534zM5.337 8.855c-1.144 0-1.915-.759-1.915-1.71 0-.956.77-1.71 1.965-1.71 1.194 0 1.916.754 1.94 1.71 0 .951-.746 1.71-1.99 1.71zm1.582 11.597H3.635V9.236h3.284v11.216zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
-                    </svg>
-                    <span>LinkedIn</span>
-                </a>
-            </div>
-            <form class="contact__form" action="https://formspree.io/f/mrevzzke" method="POST">
-                <input type="text" name="_gotcha" style="display:none" aria-hidden="true">
-                <input type="hidden" name="_subject" value="Portfolio Contact">
-                <div class="form-group">
-                    <label for="contact-name" class="sr-only">Your Name</label>
-                    <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="contact-email" class="sr-only">Your Email</label>
-                    <input type="email" id="contact-email" name="_replyto" class="form-input" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <label for="contact-message" class="sr-only">Your Message</label>
-                    <textarea id="contact-message" name="message" class="form-textarea" rows="5" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="form-submit">Send Message</button>
-            </form>
+      <article class="card">
+        <div class="card__top">
+          <h3>Plate</h3>
+          <span class="card__kind">Desktop + CLI</span>
         </div>
-    </section>
+        <p>
+          Collapses a repetitive multi-step media workflow into one guided operation.
+          Native cross-platform GUI, a background job queue for batch work, and a parallel
+          CLI for unattended runs. Orchestrates FFmpeg and FFprobe as subprocesses and
+          emits a machine-readable manifest. Published to PyPI.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>PySide6</span><span>FFmpeg</span><span>PyPI</span>
+        </div>
+        <div class="card__links">
+          <a href="https://github.com/edgarciavfx/plate">Source →</a>
+          <a href="https://pypi.org/project/plateprep/">PyPI →</a>
+        </div>
+      </article>
 
-    <footer class="footer">
-        <div class="container">
-            <img src="lzg-sign-white.png" class="footer__brand-sig" alt="lyzerg signature" width="240">
-            <p class="footer__text">Visual Development Artist &middot; AI Workflow Developer &middot; Digital Compositor</p>
-            <p class="footer__sig">lzg</p>
+      <article class="card">
+        <div class="card__top">
+          <h3>comfy-watch</h3>
+          <span class="card__kind">CLI</span>
         </div>
-        <div class="footer__lut" aria-hidden="true">
-            <div class="footer__lut-swatch"></div>
-            <div class="footer__lut-swatch"></div>
-            <div class="footer__lut-swatch"></div>
-            <div class="footer__lut-swatch"></div>
-            <div class="footer__lut-swatch"></div>
-            <div class="footer__lut-swatch"></div>
+        <p>
+          Terminal observability tool. Connects to a remote service over WebSocket and
+          streams live execution events, progress percentages and error states as a plain
+          line log, with a raw-frame mode for low-level protocol debugging.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>WebSocket</span><span>MCP</span>
         </div>
-    </footer>
+        <div class="card__links">
+          <a href="https://github.com/edgarciavfx/comfy-watch">Source →</a>
+        </div>
+      </article>
 
-    <script src="script.js"></script>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="shell">
+    <p class="eyebrow">Stack</p>
+    <h2>What I reach for</h2>
+    <dl class="stack">
+      <div>
+        <dt>Frontend</dt>
+        <dd>TypeScript · JavaScript (ES6+) · React 19 · Next.js 15/16 App Router · Tailwind CSS · Radix UI · HTML5 · CSS3</dd>
+      </div>
+      <div>
+        <dt>Backend</dt>
+        <dd>Node.js · Python 3.13 · Express · REST APIs · Server Actions · WebSockets · Zod · RBAC &amp; authentication</dd>
+      </div>
+      <div>
+        <dt>Data</dt>
+        <dd>PostgreSQL · SQLite · MongoDB · SQL · Prisma · Drizzle · schema design &amp; query indexing</dd>
+      </div>
+      <div>
+        <dt>Ops &amp; tooling</dt>
+        <dd>Git · GitHub Actions · Linux · Bash · Playwright · Railway · automated testing &amp; deployment</dd>
+      </div>
+    </dl>
+    <div class="prose" style="margin-top:2rem">
+      <p>
+        Certified Full-Stack Developer — Codecademy, March 2026 (credential 697BCFFA21).
+        Spanish native, professional English.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="prior" id="before">
+  <div class="shell">
+    <p class="eyebrow">Before this</p>
+    <h2>Six years inside automated production pipelines</h2>
+    <div class="prose">
+      <p>
+        I came to software through the back door. For six years I worked as a digital
+        compositor on feature films and series for international clients — which meant
+        living inside large-scale automated pipelines, collaborating with pipeline
+        engineers, and being the person who kept tripping over the bottleneck.
+      </p>
+      <p>
+        The useful part isn't the craft; it's what the environment taught. Debugging data
+        integration failures in live, high-pressure delivery systems. Reading an
+        unfamiliar internal codebase fast enough to be useful the same day. Shipping
+        against hard deadlines and zero-fault quality gates. Eventually reporting the
+        bottleneck stopped making sense and fixing it started to.
+      </p>
+    </div>
+
+    <div class="roles">
+      <div class="role"><span><b>Ingenuity Studios</b> — <em>Digital Compositor (Contractor), remote · Los Angeles</em></span><time>Oct 2021 – Oct 2024</time></div>
+      <div class="role"><span><b>La Covacha</b> — <em>Postproduction Artist · Guadalajara</em></span><time>Apr 2020 – Apr 2021</time></div>
+      <div class="role"><span><b>MPC</b> — <em>Compositing Artist · Vancouver</em></span><time>Sep 2019 – Dec 2019</time></div>
+      <div class="role"><span><b>LFT Studio</b> — <em>VFX Generalist · Guadalajara</em></span><time>Dec 2017 – Jun 2018</time></div>
+    </div>
+
+    <p class="eyebrow" style="margin-top:2.5rem">Selected credits</p>
+    <ul class="credits">
+      <li>Sonic the Hedgehog <i>2020</i></li>
+      <li>Black Mirror <i>2019</i></li>
+      <li>Ted Lasso <i>2020</i></li>
+      <li>The Flight Attendant <i>2020</i></li>
+      <li>Cowboy Bebop <i>2021</i></li>
+      <li>Abbott Elementary <i>2021</i></li>
+      <li>Young Rock <i>2021</i></li>
+      <li>Hellraiser <i>2022</i></li>
+      <li>Loot <i>2022</i></li>
+      <li>Echoes <i>2022</i></li>
+      <li>This Fool <i>2022</i></li>
+      <li>The Terminal List <i>2022</i></li>
+      <li>Let the Right One In <i>2022</i></li>
+      <li>A Murder at the End of the World <i>2022</i></li>
+      <li>House Party <i>2023</i></li>
+      <li>One Piece <i>2023</i></li>
+      <li>Lioness <i>2023</i></li>
+      <li>Ick <i>2023</i></li>
+      <li>Horizon: An American Saga <i>2024</i></li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="shell">
+    <p class="eyebrow">Contact</p>
+    <h2>Let's talk</h2>
+    <div class="prose">
+      <p>
+        Open to full stack developer roles in Guadalajara or remote, and to consulting
+        engagements with businesses that have a process worth fixing.
+      </p>
+    </div>
+
+    <form class="form" action="https://formspree.io/f/mrevzzke" method="POST">
+      <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1">
+      <input type="hidden" name="_subject" value="Portfolio contact">
+      <label class="sr-only" for="c-name">Your name</label>
+      <input id="c-name" type="text" name="name" placeholder="Your name" required>
+      <label class="sr-only" for="c-email">Your email</label>
+      <input id="c-email" type="email" name="_replyto" placeholder="Your email" required>
+      <label class="sr-only" for="c-msg">Your message</label>
+      <textarea id="c-msg" name="message" rows="5" placeholder="What are you working on?" required></textarea>
+      <button type="submit">Send message</button>
+    </form>
+
+    <p class="direct">
+      Or directly — <a href="mailto:edgarciavfx@gmail.com">edgarciavfx@gmail.com</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="shell">
+    <p>Edgar Garcia Padilla — Guadalajara, Jalisco, Mexico</p>
+    <p>
+      <a href="https://github.com/edgarciavfx">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/edgarciavfx/">LinkedIn</a> ·
+      <a href="Edgar_Garcia_Padilla_Full_Stack_Developer_CV.pdf">Résumé</a>
+    </p>
+  </div>
+</footer>
+
 </body>
 </html>

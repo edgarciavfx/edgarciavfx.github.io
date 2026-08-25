@@ -1,22 +1,13 @@
-# Edgar Garcia — Portfolio
+# edgarciavfx.github.io
 
-Personal portfolio site built as a single-page application with vanilla HTML, CSS, and JavaScript. Deployed via GitHub Pages.
+Personal site for Edgar Garcia Padilla — Full Stack Developer, Guadalajara, Mexico.
 
-## Sections
+Static, no build step. `index.html` + `styles.css`, fonts from Google Fonts,
+contact form via Formspree. Served by GitHub Pages from `main`.
 
-- **About** — Background, journey, and what I bring
-- **Skills** — Interactive skill tree with search and related-skill tooltips
-- **Projects** — Featured project cards with status indicators
-- **VFX Work** — Scrolling poster gallery powered by TMDb API
-- **Contact** — Social links and Formspree contact form
+- `Edgar_Garcia_Padilla_Full_Stack_Developer_CV.pdf` — current résumé, linked from the site
+- `Edgar_Garcia_Padilla_Resume.pdf` — earlier VFX résumé, kept for VFX applications, not linked
+- `posters/` — artwork from the previous VFX version of this site, unused
 
-## Tech
-
-- HTML, CSS, JavaScript (zero dependencies)
-- TMDb API for movie posters
-- Formspree for contact form
-- GitHub Pages for deployment
-
-## Deploy
-
-Push to `main` — GitHub Pages serves from the root automatically at `https://edgarciavfx.github.io`.
+Light and dark themes are defined as CSS custom properties on `:root`, with
+`prefers-color-scheme` and a `data-theme` override.
