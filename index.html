@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Edgar Garcia Padilla — Full Stack Developer in Guadalajara, Mexico. TypeScript, React/Next.js and PostgreSQL on the web; Python for the tools that live outside the browser. Business analysis and custom software for SMBs.">
+<meta name="description" content="Edgar García — VFX compositor and pipeline tools developer in Guadalajara, Mexico. Shot work for MPC and Ingenuity Studios; Python and ComfyUI tools that get AI output to final.">
 <meta name="theme-color" content="#F5F6F8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0E1117" media="(prefers-color-scheme: dark)">
-<title>Edgar Garcia Padilla — Full Stack Developer</title>
+<title>Edgar García — VFX Compositor &amp; Pipeline Tools</title>
 <link rel="canonical" href="https://edgarciavfx.github.io">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -23,10 +23,10 @@
       <b>Edgar Garcia</b>
     </a>
     <ul class="nav__links">
-      <li><a href="#work">Work</a></li>
+      <li><a href="#before">Studio work</a></li>
+      <li><a href="#work">Tools</a></li>
       <li><a href="#consulting">Consulting</a></li>
       <li><a href="#stack">Stack</a></li>
-      <li><a href="#before">Before</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -34,20 +34,55 @@
 
 <header class="hero" id="top">
   <div class="shell">
-    <p class="badge"><i></i>Open to full stack roles · Guadalajara &amp; remote</p>
-    <h1>I build the software that <span>removes the manual step</span>.</h1>
+    <p class="badge"><i></i>Open to compositing &amp; comp TD roles · Guadalajara &amp; remote, Pacific hours</p>
+    <h1>I composite the shot and <span>build the tools around it</span>.</h1>
     <p class="hero__lede">
-      Full stack developer. Web applications end to end in TypeScript, React/Next.js and
-      PostgreSQL — and Python when the problem lives outside the browser.
+      VFX compositor. Shot work for MPC Vancouver and Ingenuity Studios (Los Angeles, remote),
+      and the Python and ComfyUI tools that take plates, mattes and AI output to final.
     </p>
     <div class="hero__cta">
-      <a class="btn btn--solid" href="Edgar_Garcia_Padilla_Full_Stack_Developer_CV.pdf">Résumé (PDF)</a>
+      <a class="btn btn--solid" href="https://vimeo.com/edgarciavfx">Reel (Vimeo)</a>
+      <a class="btn" href="CV_Edgar_Garcia_Compositor_EN.pdf">Résumé (PDF)</a>
       <a class="btn" href="https://github.com/edgarciavfx">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/edgarciavfx/">LinkedIn</a>
       <a class="btn" href="#contact">Get in touch</a>
     </div>
   </div>
 </header>
+
+<section class="prior" id="before">
+  <div class="shell">
+    <p class="eyebrow">Studio work</p>
+    <h2>Five years of shot work for film and series</h2>
+    <div class="prose">
+      <p>
+        My first studio job was Sonic the Hedgehog at MPC Vancouver. From 2021 to 2024 I
+        composited remotely for Ingenuity Studios in Los Angeles, on shows from Abbott
+        Elementary to Horizon: An American Saga: CG integration, keying with CG environments
+        and matte paintings, and fire, smoke, blood and rain element work in Nuke.
+      </p>
+      <p>
+        Today I finish campaign work at La Covacha in Guadalajara with a pipeline I scripted
+        myself: scene-cut detection, base grade, headless renders, ComfyUI mattes scored
+        against hand roto, and checks that every client note made it into the delivery.
+      </p>
+    </div>
+
+    <div class="roles">
+      <div class="role"><span><b>La Covacha</b> — <em>Post-production &amp; VFX Artist · Guadalajara</em></span><time>Sep 2026 – Present</time></div>
+      <div class="role"><span><b>Ingenuity Studios</b> — <em>Digital Compositor (contract), remote · Los Angeles</em></span><time>Oct 2021 – Oct 2024</time></div>
+      <div class="role"><span><b>La Covacha</b> — <em>Post-production Artist · Guadalajara</em></span><time>Apr 2020 – Apr 2021</time></div>
+      <div class="role"><span><b>MPC</b> — <em>Compositing Artist · Vancouver</em></span><time>Sep 2019 – Dec 2019</time></div>
+    </div>
+
+    <p class="eyebrow" style="margin-top:2.5rem">Shows contributed to (uncredited)</p>
+    <ul class="credits">
+      <li>Sonic the Hedgehog <i>MPC</i></li>
+      <li>Abbott Elementary <i>Ingenuity Studios</i></li>
+      <li>Horizon: An American Saga <i>Ingenuity Studios</i></li>
+    </ul>
+  </div>
+</section>
 
 <section id="consulting">
   <div class="shell">
@@ -94,7 +129,7 @@
 
 <section id="work">
   <div class="shell">
-    <p class="eyebrow">Selected work</p>
+    <p class="eyebrow">Tools</p>
     <h2>Things I've built and shipped</h2>
 
     <div class="grid">
@@ -161,6 +196,24 @@
 
       <article class="card">
         <div class="card__top">
+          <h3>PlateTrack</h3>
+          <span class="card__kind">ComfyUI node</span>
+        </div>
+        <p>
+          Custom ComfyUI node for VFX plate tracking, published on the Comfy Registry and
+          installable in one click. Feeds tracked data to AI matte and cleanup workflows so
+          generated elements stay locked to the plate.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>ComfyUI</span><span>Comfy Registry</span>
+        </div>
+        <div class="card__links">
+          <a href="https://github.com/edgarciavfx/comfyui-platetrack">Source →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__top">
           <h3>comfy-watch</h3>
           <span class="card__kind">CLI</span>
         </div>
@@ -187,6 +240,10 @@
     <h2>What I reach for</h2>
     <dl class="stack">
       <div>
+        <dt>Compositing</dt>
+        <dd>Nuke · After Effects · Mocha Pro · DaVinci Resolve Studio · ComfyUI · Maya</dd>
+      </div>
+      <div>
         <dt>Frontend</dt>
         <dd>TypeScript · JavaScript (ES6+) · React 19 · Next.js 15/16 App Router · Tailwind CSS · Radix UI · HTML5 · CSS3</dd>
       </div>
@@ -196,7 +253,7 @@
       </div>
       <div>
         <dt>Data</dt>
-        <dd>PostgreSQL · SQLite · MongoDB · SQL · Prisma · Drizzle · schema design &amp; query indexing</dd>
+        <dd>PostgreSQL · SQLite · SQL · Drizzle · schema design &amp; query indexing</dd>
       </div>
       <div>
         <dt>Ops &amp; tooling</dt>
@@ -212,57 +269,7 @@
   </div>
 </section>
 
-<section class="prior" id="before">
-  <div class="shell">
-    <p class="eyebrow">Before this</p>
-    <h2>Six years inside automated production pipelines</h2>
-    <div class="prose">
-      <p>
-        I came to software through the back door. For six years I worked as a digital
-        compositor on feature films and series for international clients — which meant
-        living inside large-scale automated pipelines, collaborating with pipeline
-        engineers, and being the person who kept tripping over the bottleneck.
-      </p>
-      <p>
-        The useful part isn't the craft; it's what the environment taught. Debugging data
-        integration failures in live, high-pressure delivery systems. Reading an
-        unfamiliar internal codebase fast enough to be useful the same day. Shipping
-        against hard deadlines and zero-fault quality gates. Eventually reporting the
-        bottleneck stopped making sense and fixing it started to.
-      </p>
-    </div>
 
-    <div class="roles">
-      <div class="role"><span><b>Ingenuity Studios</b> — <em>Digital Compositor (Contractor), remote · Los Angeles</em></span><time>Oct 2021 – Oct 2024</time></div>
-      <div class="role"><span><b>La Covacha</b> — <em>Postproduction Artist · Guadalajara</em></span><time>Apr 2020 – Apr 2021</time></div>
-      <div class="role"><span><b>MPC</b> — <em>Compositing Artist · Vancouver</em></span><time>Sep 2019 – Dec 2019</time></div>
-      <div class="role"><span><b>LFT Studio</b> — <em>VFX Generalist · Guadalajara</em></span><time>Dec 2017 – Jun 2018</time></div>
-    </div>
-
-    <p class="eyebrow" style="margin-top:2.5rem">Selected credits</p>
-    <ul class="credits">
-      <li>Sonic the Hedgehog <i>2020</i></li>
-      <li>Black Mirror <i>2019</i></li>
-      <li>Ted Lasso <i>2020</i></li>
-      <li>The Flight Attendant <i>2020</i></li>
-      <li>Cowboy Bebop <i>2021</i></li>
-      <li>Abbott Elementary <i>2021</i></li>
-      <li>Young Rock <i>2021</i></li>
-      <li>Hellraiser <i>2022</i></li>
-      <li>Loot <i>2022</i></li>
-      <li>Echoes <i>2022</i></li>
-      <li>This Fool <i>2022</i></li>
-      <li>The Terminal List <i>2022</i></li>
-      <li>Let the Right One In <i>2022</i></li>
-      <li>A Murder at the End of the World <i>2022</i></li>
-      <li>House Party <i>2023</i></li>
-      <li>One Piece <i>2023</i></li>
-      <li>Lioness <i>2023</i></li>
-      <li>Ick <i>2023</i></li>
-      <li>Horizon: An American Saga <i>2024</i></li>
-    </ul>
-  </div>
-</section>
 
 <section id="contact">
   <div class="shell">
@@ -270,8 +277,8 @@
     <h2>Let's talk</h2>
     <div class="prose">
       <p>
-        Open to full stack developer roles in Guadalajara or remote, and to consulting
-        engagements with businesses that have a process worth fixing.
+        Open to remote compositing and comp TD work, post-production projects in
+        Guadalajara, and consulting for businesses with a process worth fixing.
       </p>
     </div>
 
@@ -295,11 +302,12 @@
 
 <footer>
   <div class="shell">
-    <p>Edgar Garcia Padilla — Guadalajara, Jalisco, Mexico</p>
+    <p>Edgar García Padilla — Guadalajara, Jalisco, Mexico</p>
     <p>
       <a href="https://github.com/edgarciavfx">GitHub</a> ·
       <a href="https://www.linkedin.com/in/edgarciavfx/">LinkedIn</a> ·
-      <a href="Edgar_Garcia_Padilla_Full_Stack_Developer_CV.pdf">Résumé</a>
+      <a href="https://vimeo.com/edgarciavfx">Reel</a> ·
+      <a href="CV_Edgar_Garcia_Compositor_EN.pdf">Résumé</a>
     </p>
   </div>
 </footer>
